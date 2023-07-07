@@ -9,7 +9,7 @@
 * 可以实现多种编程语言的筛选。
 
 ## 运行结果
-首先，运行ExtractCode.py文件，获取链接均被print出来（如下），最终每种编程语言获取1000个项目工程git链接。
+首先，运行ExtractCode.py文件，获取链接均被print出来（如下），最终每种编程语言获取1000个项目工程git链接。在RepositoriesLinks文件夹下，获取的链接根据编程语言不同存放在不同的txt文件中。
   ```
   https://github.com/Snailclimb/JavaGuide.git
   https://github.com/facebook/react-native.git
@@ -42,7 +42,6 @@
   已下载
   ...
   ```
-其中RepositoriesLinks文件夹中，不同txt文件中存储爬取的不同语言的仓库链接。
 
 ## 使用技术
 整体思路为两层筛选，筛选出高质量的代码以及对应的注释。
