@@ -62,9 +62,10 @@ def ExtractCode(page, language):
 
 if __name__ == '__main__':
     # 允许搜索的语言
-    searchLanguage = ['java', 'python']
+    searchLanguage = ['java', 'python', 'c++', 'c']
     # GitHub token value
     for i in range(1, 100):
+        # 选择搜索语言
         ExtractCode(i, searchLanguage[1])
         # 一页停5秒，防止限制
         time.sleep(5)

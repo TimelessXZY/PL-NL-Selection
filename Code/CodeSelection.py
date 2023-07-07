@@ -60,7 +60,7 @@ def ChatGpt(content, key):
 
 if __name__ == '__main__':
     # 语言选择
-    language = ['python', 'java']
+    language = ['python', 'java', 'c', 'c++']  # 可添加更多语言
     # 获取仓库存储地址
     localPath = '../ExtractRepositories/'
     for lang in language:
