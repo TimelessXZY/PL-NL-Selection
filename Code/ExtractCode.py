@@ -47,7 +47,8 @@ def ExtractCode(page, language):
     # 创建解析器
     soup = BeautifulSoup(response.text, 'html.parser')
     # 找所有的a标签下的span元素，该元素里的文本为可以拼接为链接
-    SpanTags = soup.find_all('a', class_='v-align-middle')
+    # SpanTags = soup.find_all('a', class_='v-align-middle') #貌似夜晚mode，html相应的标签会改变
+    SpanTags = soup.find_all('span', class_='qaOIC')
     # 链接文本存储
     LinksPath = r"../RepositoriesLinks/" + language + ".txt"
     with open(LinksPath, "a", encoding="utf8") as f:
@@ -64,6 +65,6 @@ if __name__ == '__main__':
     searchLanguage = ['java', 'python']
     # GitHub token value
     for i in range(1, 100):
-        ExtractCode(i, searchLanguage[0])
+        ExtractCode(i, searchLanguage[1])
         # 一页停5秒，防止限制
         time.sleep(5)
